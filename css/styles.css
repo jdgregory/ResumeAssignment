@@ -1,0 +1,67 @@
+/* Jennifer Gregory, 9/07/2021, Assignment 3, styles.css */
+/* 
+COLOR PALETTE
+--midnight-green-eagle-green: #1a535cff;
+--medium-turquoise: #4ecdc4ff;
+--light-coral: #ff8585ff;
+--naples-yellow: #ffe66dff;
+--mint-cream: #f7fff7ff;
+*/
+
+/* Global Styles
+--------------------------------------------------------------*/
+body {
+    color: #343434;  /* dark gray text color */
+}
+img {
+    width: 300px;  /* sets all image widths to 300px */
+}
+a {
+   color: #ffe66dff;  /* naples-yellow link color */
+}
+a:hover {
+    text-decoration: none;  /* removes link underline on hover */
+}
+
+/* Profile
+--------------------------------------------------------------*/
+header {
+    background: #ffe66dff;  /* naples-yellow background */
+}
+
+/* Projects
+--------------------------------------------------------------*/
+.projects {
+    background: #ff8585ff;  /* light-coral background */
+}
+.projects a{
+    color: #1a535cff;  /* text color for non-button links */
+}
+.projects .btn {
+    background: #1a535cff;  /* midnight-green-eagle-green button background */
+    color: #f7fff7ff;  /* mint-cream button text color */
+    text-decoration: none;  /* removes link underline */
+    padding: 8px;  /* adds padding to button */
+    border-radius: 4px;  /* rounds corners of buttons */
+}
+.projects .btn:hover {
+    background: rgba(26, 83, 92, 80%);  /* applies opacity on hover */
+
+}
+
+/* Work Experience
+--------------------------------------------------------------*/
+.work-experience {
+    background: #4ecdc4ff;  /* medium-turquoise background */
+}
+
+/* Education
+--------------------------------------------------------------*/
+
+
+/* Contact Info
+--------------------------------------------------------------*/
+footer {
+    background: #1a535cff;  /* midnight-green-eagle-green background */
+    color: #f7fff7ff;  /* mint-cream text color */
+}
