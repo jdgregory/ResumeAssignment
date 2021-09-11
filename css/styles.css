@@ -10,26 +10,50 @@ COLOR PALETTE
 
 /* Global Styles
 --------------------------------------------------------------*/
+html {
+    box-sizing: border-box; /* includes padding and border when calculating element's width */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     color: #343434;  /* dark gray text color */
     margin: 0;  /* changes default body margins to 0  */
     padding: 0;  /* changes default body padding to 0 */
-    font-size: 15px;
-    line-height: 1.5;
+    font-size: 18px; /* changes browser's default font size to 18px */
+    font-family: 'Roboto', sans-serif; /* changes browser's default font to Roboto, sans-serif */
 }
+/* Images */
 img {
     width: 300px;  /* sets all image widths to 300px */
 }
+/* Links */
 a {
    color: #ffe66dff;  /* naples-yellow link color */
 }
 a:hover {
     text-decoration: none;  /* removes link underline on hover */
 }
-h2 {
-    margin: 0;
+/* Headings */
+h1 {
+    font-size: 70px;  /* changes h1 font-size to 70px */
+    text-shadow: 2px 2px #FFC300; /* adds text shadow to h1 heading - requirement for Lesson 4 */
 }
-.content-wrap {
+h2 {
+    font-size: 40px;  /* changes h2 font-size to 40px */
+}
+h1, h2 {  
+    font-family: 'Berkshire Swash', cursive; /* changes h1, h2 font to Berkshire Swash */
+    font-weight: 400; /* changes h1, h2 font-weight to 400 */
+    margin: 0; /* changes h1, h2 margins to 0 */
+}
+/* Paragraphs, Lists */
+p, li {
+    line-height: 1.5; /* increases space between p and li items */
+}
+/* Classes */
+.content-wrap {  /* centers page content, controls content width */
     width: 800px;  /* width of content is 800px */
     margin: 0 auto;  /* auto-centers page content */
     padding: 60px 0; /* 60px padding added to top and bottom, 0 added to left and right */
@@ -39,6 +63,12 @@ h2 {
 --------------------------------------------------------------*/
 header {
     background: #ffe66dff;  /* naples-yellow background */
+    text-align: center;  /* aligns header text to center */
+}
+#roboto-bold-h2 {  /* changes h2 from berkshire swash to roboto */
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    margin: 14px;
 }
 
 /* Projects
@@ -52,6 +82,7 @@ header {
 .projects .btn {
     background: #1a535cff;  /* midnight-green-eagle-green button background */
     color: #f7fff7ff;  /* mint-cream button text color */
+    font-size: 14px;  /* changes font-size from 18px to 14px */
     text-decoration: none;  /* removes link underline */
     padding: 8px;  /* adds padding to button */
     border-radius: 4px;  /* rounds corners of buttons */
@@ -61,7 +92,18 @@ header {
     background: rgba(26, 83, 92, 80%);  /* applies opacity on hover */
 
 }
-
+.project-item {
+    overflow: hidden;
+    border-bottom: 1px dashed #1a535cff;  /* adds dashed line to separate project items */
+    padding: 25px 0;  /* adds padding to increase distance between border and content */
+}
+.project-item img {
+    float: left;  /* floats images to the left of project information */
+    margin-right: 20px;  /* increases spacing between images and text */
+}
+.project-item h3 {  
+    margin-top: 0;  /* aligns h3 top with top of image */
+}
 /* Work Experience
 --------------------------------------------------------------*/
 .work-experience {
