@@ -12,6 +12,10 @@ COLOR PALETTE
 --------------------------------------------------------------*/
 body {
     color: #343434;  /* dark gray text color */
+    margin: 0;  /* changes default body margins to 0  */
+    padding: 0;  /* changes default body padding to 0 */
+    font-size: 15px;
+    line-height: 1.5;
 }
 img {
     width: 300px;  /* sets all image widths to 300px */
@@ -21,6 +25,14 @@ a {
 }
 a:hover {
     text-decoration: none;  /* removes link underline on hover */
+}
+h2 {
+    margin: 0;
+}
+.content-wrap {
+    width: 800px;  /* width of content is 800px */
+    margin: 0 auto;  /* auto-centers page content */
+    padding: 60px 0; /* 60px padding added to top and bottom, 0 added to left and right */
 }
 
 /* Profile
@@ -43,6 +55,7 @@ header {
     text-decoration: none;  /* removes link underline */
     padding: 8px;  /* adds padding to button */
     border-radius: 4px;  /* rounds corners of buttons */
+    display: inline-block;  /* moves button into padding space of section element */
 }
 .projects .btn:hover {
     background: rgba(26, 83, 92, 80%);  /* applies opacity on hover */
