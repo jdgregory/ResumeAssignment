@@ -1,5 +1,6 @@
 <!-- Jennifer Gregory, 9/07/2021, Assignment 3, index.html -->
-<!-- Updated on 9/11/2021, Assignment 4, index.html -->
+<!-- Updated on 9/11/2021, Assignment 4 -->
+<!-- Updated on 9/25/2021, Assignment 6, added navigation menu -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,8 +11,54 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main-nav.css">
   </head>
   <body>
+    <!-- ***********************  Navigation Menu  *********************** -->
+    <nav class="main-nav">
+      <ul> <!-- main UL-->
+        <li>Home</li>
+        <li>About Me</li>
+
+        <!-- Services Drop-down-->
+        <li>Services
+          <!-- nested UL 1-->
+          <ul> 
+            <li>Web Design</li>
+            <li>Graphic Design</li>
+            <li>Logo Design</li>
+          </ul> 
+          <!-- end nested UL 1-->
+        </li>
+        <!-- end Services Drop-down-->
+
+        <!-- Project Gallery Drop-down-->
+        <li>Project Gallery
+          <!-- nested UL 2-->
+          <ul>
+            <li>Web</li>
+            <li>Print</li>
+            <li>Logos</li>
+          </ul>
+          <!-- end nested UL 2-->
+        </li>
+        <!-- End of Project Gallery Drop-down-->
+
+        <!-- Contact Me Drop-down -->
+        <li>Contact Me
+          <!-- nested UL 3-->
+          <ul> 
+            <li>Contact Form</li>
+            <li>Phone</li>
+            <li>Email</li>
+          </ul> 
+          <!-- nested UL 3-->
+        </li>
+        <!-- end Contact Me Drop-down-->
+
+      </ul> <!-- end of main UL-->
+    </nav>
+
     <main>
       <!-- ***********************  ABOUT / PROFILE  *********************** -->
       <header>
@@ -50,7 +97,7 @@
           <section class="project-item">
             <img src="images/thumbnail-3.jpg" alt="High Country Beverage Logo featuring a red apple">
             <h3>Logo for Beverage Company</h3>
-            <p>This logo was created for an apple-infused sparkling water beverage produced in Blowing Rock, NC. The purpose of the assignment was to use effective principles of typography and color theory, as well as practice using the pen and shape tools in Adobe Illustrator.</p>
+            <p>This logo was created for an apple-infused sparkling water beverage produced in Blowing Rock, NC. The purpose of the assignment was to effectively use principles of typography and color theory, as well as practice using the pen and shape tools in Adobe Illustrator.</p>
             <a class="btn" href="#" target="_blank">View more about the project</a>
           </section>
           <!-- End of Project block 3 -->
@@ -62,7 +109,6 @@
       <section class="work-experience">
         <div class="content-wrap">
           <h2>Work Experience</h2>
-          <p>Optional paragraph for work experience summary. Not a part of the job details. Delete if not being used.</p>
           <!-- ****** 2 Blocks ****** -->
           <!-- Job Block 1 -->
           <section>
