@@ -40,7 +40,7 @@ html {
     padding: 20px 35px;                           /*Add padding around the text*/
  }
  .main-nav ul li ul li:hover { 
-     background: #474747;                       /*Change submenu item's background color when hovered over*/
+     background: #164850;                       /*Change submenu item's background color when hovered over*/
 } 
  .main-nav ul li:hover ul {                       /*This section styles the submenu when a menu item it hovered over*/
     display: block;                               /*Display submenu as a block when the menu item is hovered over*/
